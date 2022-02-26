@@ -1,0 +1,36 @@
+package project;
+import java.util.Scanner;
+
+public class ExampleP {
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		
+		double orderNumber;
+		double test;
+		double money;
+		money = 4;
+		orderNumber = 5;
+		final double tax;
+		double total;
+		double membership;
+		tax = .07;
+		while(money > 0) {
+		
+			System.out.println("would you like to sign up for a membership?");
+			membership= keyboard.nextDouble();
+			System.out.println("enter the item you would like to purchase exactly:");
+			test = keyboard.nextDouble();
+			
+			
+				if(test == 4 && money > 0 && membership == 0) {
+					total= ((orderNumber * tax)+orderNumber);
+					 money = money - total;
+					System.out.println("you spent " + total + "and have " + money +"remaining");
+				}
+				else if(test == 4 && money > 0 && membership == 1) {
+					System.out.println("would you like to sign up for a membership?");
+				}
+			}
+		
+		}
+}
