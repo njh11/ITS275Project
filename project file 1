@@ -29,7 +29,7 @@ public class ExampleP {
 			//System.out.println("Would you like to sign up for a membership?");
 			//membership= keyboard.nextDouble();
 			System.out.println("The items availbale are Bread, Laundry Detergent or Candy");
-			System.out.println("For Bread enter 1 For Laundry Detergent 2 For Cnady 3");
+			System.out.println("For Bread enter 1 For Laundry Detergent 2 For Candy 3");
 			System.out.println("enter the item you would like to purchase exactly:");
 			test = keyboard.nextDouble();
 		
