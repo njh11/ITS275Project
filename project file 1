@@ -6,29 +6,66 @@ public class ExampleP {
 		Scanner keyboard = new Scanner(System.in);
 		
 		double orderNumber;
-		double test;
+		double test = 1;
 		double money;
-		money = 4;
 		orderNumber = 5;
+		double order3;
+		order3 = 3;
+		double order4;
+		order4 = 10;
 		final double tax;
 		double total;
 		double membership;
 		tax = .07;
-		while(money > 0) {
+		// get users amount of money and membership status 
+		System.out.println("Enter the amount of money you want to spend");
+		money= keyboard.nextDouble();
+		System.out.println("Would you like to sign up for a membership?");
+		membership= keyboard.nextDouble();
 		
-			System.out.println("would you like to sign up for a membership?");
-			membership= keyboard.nextDouble();
+		while(money > 0 && test != 0) {
+
+			//System.out.println("Would you like to sign up for a membership?");
+			//membership= keyboard.nextDouble();
+			System.out.println("item numbers");
 			System.out.println("enter the item you would like to purchase exactly:");
 			test = keyboard.nextDouble();
-			
-			
+		
+			//change text to fit parameters
 				if(test == 4 && money > 0 && membership == 0) {
 					total= ((orderNumber * tax)+orderNumber);
 					 money = money - total;
 					System.out.println("you spent " + total + "and have " + money +"remaining");
 				}
 				else if(test == 4 && money > 0 && membership == 1) {
+					total= ((orderNumber * tax)+orderNumber);
+					 money = money - total;
 					System.out.println("would you like to sign up for a membership?");
+					
+				}
+				else if(test == 5 && money > 0 && membership == 1) {
+					total= ((order3 * tax)+order3);
+					 money = money - total;
+					System.out.println("you spent " + total + "and have " + money +"remaining");
+				}
+					
+				else if(test == 5 && money > 0 && membership == 0) {
+						total= ((order3 * tax)+order3);
+						 money = money - total;
+						System.out.println("you spent " + total + "and have " + money +"remaining");
+				}
+				else if(test == 3 && money > 0 && membership == 0) {
+					total= ((order4 * tax)+order4);
+					 money = money - total;
+					System.out.println("you spent " + total + "and have " + money +"remaining");
+				}
+				else if(test == 3 && money > 0 && membership == 1) {
+					total= ((order4 * tax)+order4);
+					 money = money - total;
+					System.out.println("you spent " + total + "and have " + money +"remaining");
+			
+			
+				
 				}
 			}
 		
