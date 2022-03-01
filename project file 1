@@ -20,7 +20,7 @@ public class ExampleP {
 		// get users amount of money and membership status 
 		System.out.println("Enter the amount of money you want to spend");
 		money= keyboard.nextDouble();
-		System.out.println("For Yes enter 1 For No enter 0 ");
+		System.out.println("For Yes enter 1 For No enter 0");
 		System.out.println("Would you like to sign up for a membership?");
 		membership= keyboard.nextDouble();
 		
